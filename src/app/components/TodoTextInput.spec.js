@@ -6,7 +6,7 @@ function setup(propOverrides) {
   const props = Object.assign({
     onSave: jasmine.createSpy(),
     text: 'Use Redux',
-    placeholder: 'What needs to be done?',
+    placeholder: 'What other shit needs to be done?',
     editing: false,
     newTodo: false
   }, propOverrides);
