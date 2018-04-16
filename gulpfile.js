@@ -27,3 +27,11 @@ function watch(done) {
   gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
   done();
 }
+
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
